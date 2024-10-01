@@ -1,0 +1,32 @@
+/*********************************
+          TEXT ANIMATE
+**********************************/
+.text_animate .title{
+    animation: show 5s forwards, pop-word 5s forwards;
+    animation-timing-function: cubic-bezier(0.14, 1.23, 0.33, 1.16);
+    transform: rotateX(120deg);
+    transform-origin: 50% 100%;
+    position:relative;
+    opacity: 0;
+}
+
+.text_animate p, .text_animate li{
+    animation: show 5s forwards, pop-word 6s forwards;
+    animation-timing-function: cubic-bezier(0.14, 1.23, 0.33, 1.16);
+    transform: rotateX(120deg);
+    transform-origin: 50% 100%;
+    position:relative;
+    opacity: 0;
+}
+
+@keyframes show {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes pop-word {
+    to {
+        transform: rotateX(0);
+    }
+}
